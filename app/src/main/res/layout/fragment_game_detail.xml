@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+    android:id="@+id/fragment_game_detail"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/team1_image"
+                    android:layout_height="140dp"
+                    android:src="@drawable/ic_myuserphto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team 1 "
+                    android:textSize="20dp"
+                    android:id="@+id/team1_name"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/team1_image"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/team1_goals"
+                android:text="0"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/team2_goals"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/team2_image"
+                    android:src="@drawable/ic_myuserphto"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/team2_name"
+                    android:text="Team 2"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/team2_image"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Titulares"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/initial_team1"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorDivider"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suplentes"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bench_team1"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorDivider"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entrenadores"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/coachs_team1"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider"/>
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Titulares"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/initial_team2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suplentes"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bench_team2"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorDivider"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entrenadores"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/coachs_team2"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

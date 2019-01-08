@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:showAsAction="always"
+        android:enabled="true"
+        android:icon="@mipmap/ic_home">
+    </item>
+    <item
+        android:id="@+id/action_myteam"
+        android:title="Mi equipo"
+        android:showAsAction="always"
+        android:enabled="true"
+        android:icon="@mipmap/ic_team">
+    </item>
+    <item
+        android:id="@+id/action_porras"
+        android:title="Competiciones"
+        android:showAsAction="always"
+        android:enabled="true"
+        android:icon="@mipmap/ic_bet">
+    </item>
+    <item
+        android:id="@+id/action_perfil"
+        android:title="Perfil"
+        android:showAsAction="always"
+        android:enabled="true"
+        android:icon="@mipmap/ic_profile">
+    </item>
+
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:icon="@mipmap/ic_home"
+            android:id="@+id/tab_home"
+            android:title="Home"
+            android:enabled="true"/>
+    <item
+        android:icon="@mipmap/ic_team"
+        android:id="@+id/tab_team"
+        android:title="Team"
+        android:enabled="true"/>
+    <item
+        android:icon="@mipmap/ic_profile"
+        android:id="@+id/tab_profile"
+        android:title="Profile"
+        android:enabled="true"/>
+</menu>

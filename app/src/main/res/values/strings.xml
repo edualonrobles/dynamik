@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dynamik</string>
+    <string name="facebook_app_id">479941822343261</string>
+    <string name="menu">Menu</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_hot_deals">Hot deals</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="hot_deals_fragment">Hot Deals Fragment</string>
+    <string name="matches">Partidos</string>
+    <string name="competition">Competicion</string>
+</resources>
